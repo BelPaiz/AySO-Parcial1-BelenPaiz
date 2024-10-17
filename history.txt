@@ -1,0 +1,229 @@
+pwd
+whoami
+tree
+sudo apt-get update
+sudo apt install tree
+tree
+mkdir $HOME/parcial1
+ll -la
+cd parcial1/
+ssh-keygen
+cat $HOME/.ssh/*.pub
+cd ..
+mkdir repogit
+tree
+cd repogit/
+git clone git@github.com:BelPaiz/AySO-Parcial1-BelenPaiz.git
+cd .
+cd ..
+tree
+cd ./repogit/AySO-Parcial1-BelenPaiz/
+cat << FIN > README.md
+# AySO-Parcial1-BelenPaiz
+Nombre: Belen
+Apellido: Paiz
+Legajo: 112879
+Division: 312
+FIN
+
+cat README.md
+git add .
+git commit -m"ADD: informacion personal a README"
+git config --global user.email "belen.paiz.220686@gmail.com"
+git config --global user.name "Belen Paiz"
+git commit -m"ADD: informacion personal a README"
+mkdir -p ./Examenes-UTN/{alumno_{1..3}}/{parcial_{1..3}} Examenes-UTN/profesores
+tree
+rm Examenes-UTN/
+rm -r Examenes-UTN/
+tree
+cd ..
+mkdir -p ./Examenes-UTN/alumno_{1..3}/parcial_{1..3} Examenes-UTN/profesores
+tree
+vim ./parcial1/puntoa.sh
+tree
+vim ./parcial1/puntoa.sh
+tree
+pwd
+whoami
+sudo useradd -m -g programadores -G grupoprogramadores -s bin/bash programadores
+sudo groupadd programadores
+sudo useradd -m -g programadores -G grupoprogramadores -s bin/bash programadores
+sudo groupadd grupoprogramadores
+sudo useradd -m -g programadores -G grupoprogramadores -s bin/bash programadores
+sudo useradd -m -g programadores -G grupoprogramadores -s /bin/bash programadores
+sudo passwd programadores
+sudo groupadd tester
+sudo groupadd grupotester
+sudo useradd -m -g tester -G grupotester -s /bin/bash tester
+sudo passwd tester
+sudo groupadd analistas && groupadd grupoanalistas
+sudo groupadd analistas && sudo groupadd grupoanalistas
+sudo groupadd grupoanalistas
+sudo useradd -m -g analistas -G grupoanalistas -s /bin/bash analistas
+sudo passwd analistas
+sudo groupadd disenadores && sudo groupadd grupodisenadores
+sudo useradd -m -g disenadores -G grupodisenadores -s /bin/bash disenadores
+sudo passwd disenadores
+tree
+mkdir /ExamenesUTN/alumno_1
+mkdir ./ExamenesUTN/alumno_1
+mkdir ExamenesUTN
+cd ExamenesUTN/
+mkdir alumno_1
+mkdir alumno_2
+mkdir alumno_3
+mkdir profesores
+tree
+sudo chown programadores:programadores ./alumno_1/
+sudo chmod 750 ./alumno_1/
+ls -ld ./alumno_1/
+sudo chown tester:tester ./alumno_2/
+sudo chmod 760 ./alumno_2/
+ls -ld ./alumno_2/
+sudo chown analistas:analistas ./alumno_3/
+sudo chmod 700 ./alumno_3/
+ls -ld ./alumno_3/
+sudo chown disenadores:disenadores ./profesores/
+sudo chmod 775 ./profesores/
+ls -ld ./profesores/
+sudo su programadores
+sudo su tester
+sudo su analistas
+sudo su disenadores
+history
+cd .
+cd ..
+vim ./parcial1/puntoc.sh
+tree
+mkdir -p ./estructura_asimetrica/{correo,clientes}/cartas_{1..50} estructura_asimetrica/correo/carteros_{1..10}
+tree
+vim ./parcial1/puntod.sh
+grep "MemTotal" /proc/meminfo > Filtro_Basico.txt
+cat Filtro_Basico.txt
+sudo dmidecode -t chassis
+sudo dmidecode -t chassis | grep "Manufacturer" >> Filtro_Basico.txt
+cat Filtro_Basico.txt
+rm -r Filtro_Basico.txt 
+tree
+cd repogit/
+cd AySO-Parcial1-BelenPaiz/
+grep "MemTotal" /proc/meminfo > Filtro_Basico.txt
+cat Filtro_Basico.txt
+sudo dmidecode -t chassis | grep "Manufacturer" >> Filtro_Basico.txt
+cat Filtro_Basico.txt
+cd ..
+vim ./parcial1/puntoe.sh
+tree
+cd repogit/AySO-Parcial1-BelenPaiz/
+git add .
+git commit -m"ADD: punto E"
+cd ..
+curl -s ifconfig.me
+echo -n "Mi IP publica es: " > ./parcial1/Filtro_Avanzado.txt && curl -s ifconfig.me >> ./parcial1/Filtro_Avanzado.txt
+cat ./parcial1/Filtro_Avanzado.txt
+cat /etc/passwd
+rm Filtro_Avanzado.txt
+rm parcial1/Filtro_Avanzado.txt
+echo "Mi IP publica es: $(curl -s ifconfig.me)" > ./parcial1/Filtro_Avanzado.txt
+cat parcial1/Filtro_Avanzado.txt
+echo "Mi usuario es: $(whoami)" >> ./parcial1/Filtro_Avanzado.txt
+cat parcial1/Filtro_Avanzado.txt
+cat /etc/shadow
+sudo cat /etc/shadow
+sudo cat /etc/shadow | grep "^$(whoami)"
+man grep
+sudo grep vagrant /etc/shadow | awk -F ':' '{print "El Hash de mi ususario es: " $2}' >> ./parcial1/Filtro_Avanzado.txt
+cat parcial1/Filtro_Avanzado.txt
+vim ./parcial1/puntof.sh
+ll
+cd parcial1/
+ll
+cd ..
+cd parcial1/
+sudo chmod 755 puntoa.sh 
+ll
+sudo chmod 755 puntoc.sh 
+sudo chmod 755 puntod.sh 
+sudo chmod 755 puntoe.sh 
+sudo chmod 755 puntof.sh 
+ll
+cd ..
+ll
+lsblk
+sudo fdisk -l
+sudo fdisk /dev/sdc
+lsblk
+vim crear_particiones.sh
+ll
+sudo chmod 755 crear_particiones.sh 
+./crear_particiones.sh 
+lsblk
+vim crear_particiones.sh
+./crear_particiones.sh 
+vim crear_particiones.sh
+./crear_particiones.sh 
+lsblk
+sudo fdisk /dev/sdc
+lsblk
+sudo fdisk /dev/sdc
+lsblk
+vim crear_particiones.sh
+./crear_particiones.sh 
+lsblk
+sudo mkfs -t ext3 /dev/sdc1
+lsblk
+lsblk -f
+sudo mkfs -t ext3 /dev/sdc2
+sudo mkfs -t ext3 /dev/sdc3
+sudo mkfs -t ext3 /dev/sdc4
+lsblk -f
+sudo mkdir -p /mnt/disco/sdc{1..4}
+tree
+cd mnt
+cd/mnt
+cd /mnt/
+cd ..
+sudo mkdir -p /mnt/disco/sdc{1..4}
+cd mnt/
+tree
+df -h
+cd ..
+sudo mount /dev/sdc1 /mnt/disco/sdc1
+df -h
+sudo mount /dev/sdc2 /mnt/disco/sdc2
+sudo mount /dev/sdc3 /mnt/disco/sdc3
+sudo mount /dev/sdc4 /mnt/disco/sdc4
+df -h
+vim crear_particiones.sh
+ll
+tree
+cd ..
+pwd
+$HOME
+CD $HOME
+cd $HOME
+ll
+vim crear_particiones.sh
+lsblk
+vim crear_particiones.sh
+cp crear_particiones.sh parcial1/puntob.sh
+ll
+tree
+cp -r parcial1/ repogit/AySO-Parcial1-BelenPaiz/parcial1/
+tree
+cd repogit/AySO-Parcial1-BelenPaiz/
+git add .
+git commit -m"ADD: parcial finalizado"
+git push
+cp -r ExamenesUTN/ repogit/AySO-Parcial1-BelenPaiz/ExamenesUTN/
+cd ..
+cp -r ExamenesUTN/ repogit/AySO-Parcial1-BelenPaiz/ExamenesUTN/
+tree
+git add .
+cd repogit/AySO-Parcial1-BelenPaiz/
+git add .
+git commit -m"ADD: punto c directorio ExamenesUTN"
+git push
+cd ..
+history -a
